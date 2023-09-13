@@ -42,8 +42,11 @@ function Home() {
           </ul>
           
         </nav>
+       
         <h1 className='name'>Ornella Copula</h1>
         <h3 className='name2'>Front end developer</h3>
+       
+
       </div>
     );
   }

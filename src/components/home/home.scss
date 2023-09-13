@@ -2,41 +2,41 @@
   .icon-container {
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: 1.25em; /* 20px / 16px (tamaño de fuente base) */
     transform: translateY(-50%);
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     background-color: #333;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    padding: 10px;
+    border-radius: 3.125em; /* 50px / 16px (tamaño de fuente base) */
+    margin-bottom: 0.625em; /* 10px / 16px (tamaño de fuente base) */
+    padding: 0.625em; /* 10px / 16px (tamaño de fuente base) */
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     position: fixed;
-  
-  
   }
   
   .icon-box {
     color: white;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 0.625em; /* 10px / 16px (tamaño de fuente base) */
+    padding: 0.625em; /* 10px / 16px (tamaño de fuente base) */
     display: flex;
-  
   }
   
   .icon-box a {
     color: #fff;
-    font-size: 24px; 
-    margin: 5px 0; 
+    font-size: 1.5em; /* 24px / 16px (tamaño de fuente base) */
+    margin: 0.3125em 0; /* 5px / 16px (tamaño de fuente base) */
     &:hover {
       color: #ff1da7; 
     }
-  }
-  @media (max-width: 768px) {
 
+
+ 
+  }
+
+  @media (max-width: 48em) { /* 768px / 16px (tamaño de fuente base) */
     .icon-container {
       position: relative; 
       top: initial;
@@ -52,15 +52,29 @@
 
     .icon-box {
       margin-bottom: 0;
-      display: flex; /* Muestra los íconos uno debajo del otro en versiones móviles */
+      display: flex;
     }
 
     .icon-box a {
-      font-size:54px; /* Ajusta el tamaño de fuente en versiones móviles */
-      margin: 25px 25px; /* Añade un margen horizontal en versiones móviles */
+      font-size: 1.5em;
+      margin: 1.5625em 1.5625em; /* 25px / 16px (tamaño de fuente base) */
     }
-   
   }
-
 }
 
+
+.name {
+  font-size: 4em;
+  color: white; /* Cambiar color a fucsia */
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.name2 {
+  font-size: 2.5em;
+  color: #ff1da7; /* Cambiar color a lightgray */
+  font-weight: 300; /* Establecer el peso de la fuente a light */
+  text-transform: uppercase; /* Cambiar a minúsculas */
+  margin-top: 0;
+  white-space: nowrap;
+}
